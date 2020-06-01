@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 4fd84c52e53b718428d9c339066c1624
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Hauser Condensed
+  fontNames:
+  - Hauser Condensed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 15f5aafa9e04e3d469e99f1137c105f3, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
