@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Manager : MonoBehaviour
 {
     private Gyroscope gyro;
-    public GameObject Game;
+    public GameObject GamePanel;
 	public GameObject Pause;
     Scoreboard SB;
     public Text score;
@@ -18,7 +18,7 @@ public class Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Game.SetActive(true);
+        GamePanel.SetActive(true);
         Pause.SetActive(false);
         SB = FindObjectOfType<Scoreboard>();
         gyro = Input.gyro;

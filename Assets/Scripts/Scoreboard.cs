@@ -72,7 +72,11 @@ public class Scoreboard : MonoBehaviour
 		destroyedDulces=0;
 		excesos=0;
 
-		edad = int.Parse(PlayerPrefs.GetString("edad"));
+		try{
+			edad = int.Parse(PlayerPrefs.GetString("edad"));
+		}catch{
+			edad = 1;
+		}
 		
 		SetPorcionesMeta();
     }
@@ -120,7 +124,14 @@ public class Scoreboard : MonoBehaviour
 	public int excesos_value(){return this.excesos;}
 
 	public void SetPorcionesMeta(){
-		if(PlayerPrefs.GetInt("currentEtapa") == 1){
+		int currentStage;
+		try{
+			currentStage= PlayerPrefs.GetInt("currentEtapa");
+		}catch{
+			currentStage = 1;
+		}
+		
+		if(currentStage== 1){
 			if(edad <= 9){
 				M_Lacteos=20;
 				M_Verduras=20;
@@ -135,7 +146,7 @@ public class Scoreboard : MonoBehaviour
 				M_Cereales=40;
 			}
 		}
-		if(PlayerPrefs.GetInt("currentEtapa") == 2){
+		if(currentStage == 2){
 			if(edad <= 6){
 				M_Lacteos=20;
 				M_Verduras=20;
@@ -156,7 +167,7 @@ public class Scoreboard : MonoBehaviour
 				M_Cereales=60;
 			}
 		}
-		if(PlayerPrefs.GetInt("currentEtapa") == 3){
+		if(currentStage == 3){
 			if(edad <= 6){
 				M_Lacteos=20;
 				M_Verduras=20;

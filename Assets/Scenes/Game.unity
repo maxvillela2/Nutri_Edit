@@ -4871,6 +4871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fbc1cc397f6109469da0be16d931fd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GamePanel: {fileID: 928570884}
   Pause: {fileID: 2225439377574517992}
   score: {fileID: 705998683}
   healthImage: {fileID: 180325955}
