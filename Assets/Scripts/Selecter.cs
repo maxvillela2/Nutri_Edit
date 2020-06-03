@@ -156,18 +156,23 @@ public class Selecter : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonDown(0)) 
-        {
-             //Debug.Log("Cl.icked");
+        {   
+            //Debug.Log("Cl.icked");
              Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
              if(Physics.Raycast(ray, out hitInfo))
-             {
+             {  
                 var rig = hitInfo.collider.GetComponent<Rigidbody>();
 
                 if(rig != null)
-                {
+                {   
                     Selected();
                     HCInfo = hitInfo;
-                    nombre.text = HCInfo.transform.gameObject.GetComponent<G_Foes>().Name;
+                    try{
+                        nombre.text = HCInfo.transform.gameObject.GetComponent<G_Foes>().Name;
+                    }catch{
+                        //Debug.Log("error");
+                    }
+                    
                     //Debug.Log("object hit");
                 }
 
