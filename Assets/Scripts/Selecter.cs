@@ -52,7 +52,6 @@ public class Selecter : MonoBehaviour
         eating = 2;
 
         //Debug.Log("A comer");
-        ob = HCInfo.transform.gameObject;
         Debug.Log(ob.name);
         // Destroy(ob);
         selected = true;
@@ -117,8 +116,8 @@ public class Selecter : MonoBehaviour
 
         eating = 5;
         //Debug.Log("Al hielo <the godfather>");
-        ob = HCInfo.transform.gameObject;
         Debug.Log(ob.name);
+        
         //Destroy(ob);
         selected = true;
         account = false;
@@ -182,7 +181,8 @@ public class Selecter : MonoBehaviour
                         HCInfo = hitInfo;
                         try
                         {
-                            nombre.text = HCInfo.transform.gameObject.GetComponent<G_Foes>().Name;
+                            ob = HCInfo.transform.gameObject;
+                            nombre.text = ob.GetComponent<G_Foes>().Name;
                         }
                         catch
                         {
@@ -208,5 +208,10 @@ public class Selecter : MonoBehaviour
     public int GetOption()
     {
         return eating;
+    }
+    
+    //Regresa el objeto seleccionado
+    public GameObject getTarget(){
+        return ob;
     }
 }
