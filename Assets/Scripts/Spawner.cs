@@ -26,7 +26,7 @@ public class Spawner : MonoBehaviour
  	private string[] lista_verdura = new string[] {"Aguacate","Berenjena","Brocoli","Calabacita","Cebolla","Guisante","Hongo","Maiz","Nopal","PepinoReb","Pimiento","TomateReb","Zanahoria"};
 	private string[] lista_fruta = new string[] {"Banana","ManzanaM","NaranajaM","NaranjaC","Cereza","Frambuesa","Fresa","Kiwi","Mango","Papaya","Pina","Sandia","Uva"};
 	private string[] lista_cereal = new string[] {"Arroz","Bolillo","Hotcakes","Pan","Tortilla"};
-	private string[] lista_carne = new string[] {"Eggs","Carne","BoliedEgg","Pollo"};
+	private string[] lista_carne = new string[] {"Eggs","Carne","BoiledEgg","Pollo"};
 	private string[] lista_leche = new string[] {"Leche","Queso","Yogurt"};
 	private string[] lista_dulce = new string[] {"Paleta","Nieve","Dulce","Pastel"};
 
